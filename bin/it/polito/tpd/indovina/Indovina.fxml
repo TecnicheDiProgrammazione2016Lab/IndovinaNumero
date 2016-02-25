@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="it.polito.tpd.indovina.IndovinaController">
+   <top>
+      <Label text="Indovina il numero" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnInizio" mnemonicParsing="false" onAction="#doIniziaPartita" text="Inizia partita" />
+            <HBox>
+               <children>
+                  <Label text="Tentativo" />
+                  <TextField fx:id="txtGuess" prefHeight="25.0" prefWidth="53.0" />
+                  <Button fx:id="btnInserisci" mnemonicParsing="false" onAction="#doGuess" text="Inserisci" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label fx:id="txtMessaggio" text="Messaggio" />
+                  <TextField fx:id="txtTentativi" editable="false" prefHeight="25.0" prefWidth="32.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
